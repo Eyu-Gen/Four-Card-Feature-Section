@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(250, 253, 255);
+}
+
+.heroSection{
+    overflow: hidden;
+    padding: 50px 70px;
+    min-height: 100vh;
+    font-family: Poppins;
+    color: grey;
+}
+
+.container1, .container2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container1{
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.firstHeading, .secondHeading{
+    color: rgb(68, 68, 68);
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.secondHeading{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.para{
+    width: 35%;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    color: grey;
+}
+
+.container2{
+    justify-content: space-evenly;
+}
+
+.subcontainer{
+    width: 25%;
+}
+
+.content1, .content2, .content3, .content4{
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgb(210, 210, 210);
+}
+
+.content1{
+    border-top: 5px solid rgb(0, 200, 255);
+}
+
+.content2{
+    border-top: 5px solid rgb(255, 0, 0);
+    margin-bottom: 30px;
+}
+
+.content3{
+    border-top: 5px solid rgb(255, 230, 0);
+}
+
+.content4{
+    border-top: 5px solid rgb(13, 0, 255);
+}
+
+.details{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 13px;
+}
+
+.imageSection{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.logo{
+    width: 50px;
+}
+
+@media(max-width:750px){
+    .heroSection{
+        padding: 30px;
+        margin-top: 30px;
+    }
+
+    .container1, .container2{
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .container1{
+        margin-bottom: 50px;
+    }
+
+    .para{
+        width: 90%;
+        text-align: justify;
+    }
+
+    .subcontainer{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
